@@ -25,13 +25,11 @@ export function ChatProvider({ children }: { children: React.ReactNode }) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Load messages from localStorage on mount
   useEffect(() => {
     const savedMessages = localStorage.getItem('chat-messages');
     if (savedMessages) {
       try {
         const parsed = JSON.parse(savedMessages);
-        // Convert timestamp strings back to Date objects
         const messagesWithDates = parsed.map((msg: any) => ({
           ...msg,
           timestamp: new Date(msg.timestamp)
@@ -42,8 +40,7 @@ export function ChatProvider({ children }: { children: React.ReactNode }) {
       }
     }
   }, []);
-
-  // Save messages to localStorage whenever messages change
+  
   useEffect(() => {
     localStorage.setItem('chat-messages', JSON.stringify(messages));
   }, [messages]);

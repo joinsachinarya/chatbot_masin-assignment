@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <ChatProvider>
-      <div className="flex h-screen bg-gray-50 dark:bg-gray-900">
+      <div className="flex h-screen bg-gray-50">
         <SuggestedPrompts onPromptClick={handlePromptClick} />
 
         <ChatInterface selectedPrompt={selectedPrompt} onPromptProcessed={() => setSelectedPrompt(null)} />

@@ -14,7 +14,7 @@ export default function ChatInput({ onSendMessage, disabled = false }: ChatInput
     const { isLoading } = useChat();
 
     return (
-        <div className="flex items-center space-x-3 p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+        <div className="flex items-center space-x-3 p-4 border-t border-gray-200 bg-white ">
             <div className="flex-1 relative">
                 <input
                     type="text"
@@ -23,7 +23,7 @@ export default function ChatInput({ onSendMessage, disabled = false }: ChatInput
                     onKeyPress={handleKeyPress}
                     placeholder={isLoading ? "Typing..." : "Type your message..."}
                     disabled={disabled}
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-2xl bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-2xl bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed"
                 />
             </div>
             <motion.button

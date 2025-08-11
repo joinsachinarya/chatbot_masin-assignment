@@ -15,20 +15,6 @@
   --sidebar-border: #e2e8f0;
 }
 
-[data-theme="dark"] {
-  --background: #0f172a;
-  --foreground: #f8fafc;
-  --chat-bg: #1e293b;
-  --chat-border: #334155;
-  --message-user-bg: #3b82f6;
-  --message-user-text: #ffffff;
-  --message-ai-bg: #334155;
-  --message-ai-text: #f1f5f9;
-  --input-bg: #1e293b;
-  --input-border: #475569;
-  --sidebar-bg: #0f172a;
-  --sidebar-border: #1e293b;
-}
 
 @theme inline {
   --color-background: var(--background);
@@ -44,7 +30,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }

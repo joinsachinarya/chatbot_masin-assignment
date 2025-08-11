@@ -21,7 +21,7 @@ export default function ChatMessage({ message }: ChatMessageProps) {
             <div
                 className={`max-w-[80%] lg:max-w-[70%] rounded-2xl px-4 py-3 ${isUser
                     ? 'bg-blue-500 text-white rounded-br-md'
-                    : 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-bl-md border border-gray-200 dark:border-gray-600'
+                    : 'bg-white  text-gray-900 rounded-bl-md border border-gray-200'
                     }`}
             >
                 <div className="text-sm leading-relaxed">
@@ -34,7 +34,7 @@ export default function ChatMessage({ message }: ChatMessageProps) {
                     )}
                 </div>
                 <div
-                    className={`text-xs mt-2 opacity-70 ${isUser ? 'text-blue-100' : 'text-gray-500 dark:text-gray-400'
+                    className={`text-xs mt-2 opacity-70 ${isUser ? 'text-blue-100' : 'text-gray-500'
                         }`}
                 >
                     {message.timestamp.toLocaleTimeString([], {

@@ -56,17 +56,15 @@ const useChatInterface = ({ selectedPrompt, onPromptProcessed }: UseChatInterfac
 
         const aiMessageResult = addMessage(aiMessage);
 
-        // Start streaming
         setTimeout(() => {
             simulateStreamingResponse(aiMessageResult.id, aiResponse);
-        }, 500); // Small delay before starting to show typing indicator
+        }, 500); 
     };
 
     const handlePromptClick = (prompt: string) => {
         handleSendMessage(prompt);
     };
 
-    // Handle selected prompt from sidebar
     useEffect(() => {
         if (selectedPrompt && onPromptProcessed) {
             handleSendMessage(selectedPrompt);
