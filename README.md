@@ -6,7 +6,6 @@ A modern and responsive chat interface that simulates AI conversations with stre
 - **Clean UI & Auto-scroll** - Modern interface with smooth animations, automatically scrolls to the latest message
 - **Chat History Persistence** - Saves conversations in localStorage
 - **Responsive Design** - Works seamlessly on desktop and mobile devices
-- **Light/Dark Mode** - Toggle between themes
 - **Suggested Prompts** - Clickable conversation starters in the sidebar
 
 ## Tech Stack
